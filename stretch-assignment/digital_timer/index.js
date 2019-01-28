@@ -14,12 +14,12 @@ setInterval(function() {
   if (counter <= 10) {
     if (counter === 10) {
       digits.style.color = "red";
-    } else if (ms < 990 && counter < 10) {
+    } else if (ms < 1000 && counter < 10) {
       ms += 10;
       msHundreds.textContent = Math.floor(ms / 10);
       msTens.textContent = ms % 10;
       console.log(Math.floor(ms / 100), ms / 10);
-      if (ms === 990) {
+      if (ms === 1000) {
         counter++;
         msHundreds.textContent = "00";
         msTens.textContent = "00";
